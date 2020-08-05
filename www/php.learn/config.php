@@ -1,8 +1,8 @@
 <?php
 
-define('DBHOST',  'localhost');
+define('DBHOST',  '172.29.0.4');
 define('DBLOGIN', 'root');
-define('DBPASS',  'root');
+define('DBPASS',  '123456');
 define('DBNAME',  'eshop');
 
 

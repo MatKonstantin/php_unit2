@@ -1,0 +1,16 @@
+[05-Aug-2020 16:37:35 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /var/www/php.learn/config.php on line 9
+[05-Aug-2020 16:39:11 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /var/www/php.learn/config.php on line 9
+[05-Aug-2020 17:40:57 UTC] PHP Parse error:  syntax error, unexpected 'fn' (T_FN), expecting '(' in /var/www/php.learn/books.php on line 3
+[05-Aug-2020 17:41:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Book' not found in /var/www/php.learn/books.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/php.learn/books.php on line 8
+[05-Aug-2020 17:42:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Book' not found in /var/www/php.learn/books.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/php.learn/books.php on line 8
+[05-Aug-2020 18:24:22 UTC] PHP Notice:  Undefined variable: err in /var/www/php.learn/books.php on line 19
+[05-Aug-2020 18:24:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getMessage() on null in /var/www/php.learn/books.php:19
+Stack trace:
+#0 {main}
+  thrown in /var/www/php.learn/books.php on line 19

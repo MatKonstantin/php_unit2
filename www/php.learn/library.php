@@ -86,7 +86,7 @@ function calcAmount( $delta = 0){
   return $summa;
 }
 
-function getParam( $param ): ?string {
+function getParam( $param): ?string {
   if( $_GET[$param] ){
     return str_replace('|', '', trim(strip_tags($_GET[$param])));
   } else {
@@ -94,9 +94,10 @@ function getParam( $param ): ?string {
   }
 } 
 
-function postParam( $param ): ?string {
+function postParam( $param, $filter = FILTER_SANITIZE_STRING ): ?string {
   if( $_POST[$param] ){
-    return str_replace('|', '', trim(strip_tags($_POST[$param])));
+    $value = filter_input(INPUT_POST, $param, $filter );
+    return $value;
   } else {
     return null;
   }
