@@ -22,7 +22,8 @@ function renderCategories( Array $cat = ['научпоп'] ): string{
  * @pub array - обычный массив строк-названий издательств
  * @return string - набор строку для отрисовки
  */
-function renderPublisher(Array $pub = []): string{
+function renderPublisher(Array $pub = []): string
+{
   $result = '';
   
   for($i = 0; $i < count($pub); ++$i ){

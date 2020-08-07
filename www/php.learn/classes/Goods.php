@@ -1,6 +1,6 @@
 <?php
 
-class Goods
+abstract class Goods
 {
     const GOODS_HTML = 'HTML';
     const GOODS_JSON = 'JSON';
@@ -15,7 +15,8 @@ class Goods
         $this->title = $title;
         $this->price = $price;
 
-        echo 'Создан экземпляр класса ' . __CLASS__ . '<hr />';
+        // echo 'Создан экземпляр класса ' . __CLASS__ . '<hr />';
     }
 
+    abstract public function get();
 }

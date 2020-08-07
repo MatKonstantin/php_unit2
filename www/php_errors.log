@@ -14,3 +14,8 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /var/www/php.learn/books.php on line 19
+[07-Aug-2020 16:32:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/php.learn/books.php on line 28
+[07-Aug-2020 16:32:12 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type Journal as array in /var/www/php.learn/books.php:29
+Stack trace:
+#0 {main}
+  thrown in /var/www/php.learn/books.php on line 29
