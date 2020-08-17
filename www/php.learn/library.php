@@ -22,8 +22,7 @@ function renderCategories( Array $cat = ['научпоп'] ): string{
  * @pub array - обычный массив строк-названий издательств
  * @return string - набор строку для отрисовки
  */
-function renderPublisher(Array $pub = []): string
-{
+function renderPublisher(Array $pub = []): string{
   $result = '';
   
   for($i = 0; $i < count($pub); ++$i ){
@@ -87,7 +86,7 @@ function calcAmount( $delta = 0){
   return $summa;
 }
 
-function getParam( $param): ?string {
+function getParam( $param ): ?string {
   if( $_GET[$param] ){
     return str_replace('|', '', trim(strip_tags($_GET[$param])));
   } else {
@@ -95,7 +94,7 @@ function getParam( $param): ?string {
   }
 } 
 
-function postParam( $param, $filter = FILTER_SANITIZE_STRING ): ?string {
+function postParam( $param, $filter = FILTER_SANITIZE_STRING  ): ?string {
   if( $_POST[$param] ){
     $value = filter_input(INPUT_POST, $param, $filter );
     return $value;

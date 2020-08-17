@@ -1,9 +1,9 @@
 <?php
 
-trait Checkout
-{
-    public function checkout()
-    {
-        echo 'Это чекаут из трейта';
-    }
+trait Checkout {
+
+  public function checkout(){
+    echo 'Ого, мы добрались до трейтов';
+  }
+
 }

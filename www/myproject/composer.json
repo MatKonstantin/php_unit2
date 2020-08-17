@@ -1,0 +1,24 @@
+{
+    "name": "root/myproject",
+    "authors": [
+        {
+            "name": "Alex",
+            "email": "alex@mail.ru"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "phpstan/phpstan": "^0.12.37"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\":"module/Application/",
+            "Vendor\\Namespace\\":""
+        } 
+    },
+    "config": { "optimize-autoloader": true }
+
+}

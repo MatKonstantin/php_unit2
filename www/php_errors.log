@@ -19,3 +19,17 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /var/www/php.learn/books.php on line 29
+[10-Aug-2020 16:03:43 UTC] PHP Notice:  Undefined variable: dbLink in /var/www/php.learn/formAddBook.php on line 28
+[10-Aug-2020 16:03:43 UTC] PHP Warning:  mysqli::prepare() expects exactly 1 parameter, 2 given in /var/www/php.learn/formAddBook.php on line 28
+[10-Aug-2020 16:04:58 UTC] PHP Notice:  Undefined variable: dbLink in /var/www/php.learn/formAddBook.php on line 28
+[10-Aug-2020 16:04:58 UTC] PHP Warning:  mysqli::prepare() expects exactly 1 parameter, 2 given in /var/www/php.learn/formAddBook.php on line 28
+[10-Aug-2020 16:22:59 UTC] PHP Notice:  Undefined index: title in /var/www/php.learn/library.php on line 91
+[10-Aug-2020 16:24:15 UTC] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /var/www/php.learn/formAddBook.php:103
+Stack trace:
+#0 {main}
+  thrown in /var/www/php.learn/formAddBook.php on line 103
+[10-Aug-2020 16:24:54 UTC] PHP Notice:  Only variables should be passed by reference in /var/www/php.learn/formAddBook.php on line 103
+[10-Aug-2020 16:24:54 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /var/www/php.learn/formAddBook.php on line 105
+[10-Aug-2020 16:29:44 UTC] PHP Notice:  Only variables should be passed by reference in /var/www/php.learn/formAddBook.php on line 120
+[10-Aug-2020 16:29:44 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /var/www/php.learn/formAddBook.php on line 122
+[10-Aug-2020 16:30:39 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /var/www/php.learn/formAddBook.php on line 123
