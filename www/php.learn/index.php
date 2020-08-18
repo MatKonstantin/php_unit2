@@ -2,7 +2,13 @@
 //https://www.sitepoint.com/the-mvc-pattern-and-php-1/ 
 // https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/03/MVC-Process.png
 
+session_start();
+
 include "config.php";
+
+if( isset($_SESSION['basket'])){
+  $_SESSION['basket'] = [];
+}
 
 spl_autoload_register(function($className){
   include_once(__DIR__ . '/classes/' . $className . '.php' );

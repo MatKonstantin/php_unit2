@@ -8,6 +8,14 @@ class View
     $this->param = $param;
   }
   public function render(){
+    $flash = '';
+
+    if(isset($_SESSION['flash'])){
+      foreach($_SESSION['flash'] as $message){
+        $flash .= "<div>$message</div>";
+      }
+      unset($_SESSION['flash']);
+    }
 
     $booksTable = "";
 
@@ -20,15 +28,22 @@ class View
         $booksTable .= "<td>" . $book->author;
         $booksTable .= "<td>" . $book->description;
         $booksTable .= "<td>" . $book->price;
-        $booksTable .= "<td><a href='?add=$idbook'>В корзину</a>";
+        $booksTable .= "<td><a href='/addtobasket/?add=$idbook'>В корзину</a>";
       }
       $booksTable .= "</table>";
     }    
 
+    $counter = 0;
+    if( is_array($_SESSION['basket']) ) {
+      foreach( $_SESSION['basket'] as $idbook => $quantity ){
+        $counter += $quantity;
+      }
+    }
+
     return  
       '<nav>' .
       '<a href="/index/">Каталог</a> ' .
-      '<a href="/basket/">Корзина</a> ' .
+      "<a href='/basket/'>Корзина ({$counter})</a> " .
       '<a href="/about/">О нас</a> ' .
       '<a href="/login/">Войти</a> ' .
       '</nav>' .

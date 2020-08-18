@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteRule ^([a-z]+)/$ /?action=$1 [L]
+RewriteRule ^([a-z]+)/(\d*)$ /?action=$1&param=$2 [L]

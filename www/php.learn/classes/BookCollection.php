@@ -16,7 +16,7 @@ class BookCollection {
   }
 
   static public function insert( $mysqli, Book $book ){
-    $query = "INSERT INTO book VALUES(NULL, ?, ?, ?, ?, ?)";
+    $query = "INSERT INTO books VALUES(NULL, ?, ?, ?, ?, ?)";
 
     $title = $book->title;
     $author = $book->author;
@@ -34,7 +34,7 @@ class BookCollection {
     }
   }
   static public function update( $mysqli,  $idbook, Book $book ){
-    $query = "UPDATE book SET
+    $query = "UPDATE books SET
       title=?,
       author=?,
       description=?,
@@ -61,7 +61,7 @@ class BookCollection {
     }   
   }
   static public function delete(  $mysqli, $idbook ){
-    $mysqli->query("DELETE FROM book WHERE idbook = " . $idbook);
+    $mysqli->query("DELETE FROM books WHERE idbook = " . $idbook);
   }
   static public function select( $mysqli, $idbook ){
     $query = "SELECT title, author, description, price, category FROM book WHERE idbook=".$idbook;
@@ -74,7 +74,7 @@ class BookCollection {
      return false;  
    }  
   static public function selectAll( $mysqli ){
-    $query = "SELECT idbook, title, author, description, price, category FROM book";
+    $query = "SELECT idbook, title, author, description, price, category FROM books";
     if( $stmt = $mysqli->prepare( $query ) ){
       $stmt->execute();  
       $stmt->bind_result($idbook, $title, $author, $description, $price, $category);

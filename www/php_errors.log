@@ -33,3 +33,4 @@ Stack trace:
 [10-Aug-2020 16:29:44 UTC] PHP Notice:  Only variables should be passed by reference in /var/www/php.learn/formAddBook.php on line 120
 [10-Aug-2020 16:29:44 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /var/www/php.learn/formAddBook.php on line 122
 [10-Aug-2020 16:30:39 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /var/www/php.learn/formAddBook.php on line 123
+[17-Aug-2020 15:58:43 UTC] PHP Notice:  Undefined index: basket in /var/www/php.learn/index.php on line 9
